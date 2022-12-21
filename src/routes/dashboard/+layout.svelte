@@ -3,6 +3,7 @@
 	const handleShow = () => {
 		show = !show;
 	};
+	export let data
 </script>
 
 <main class="flex  font-inter">
@@ -16,7 +17,7 @@
 					alt="avatar"
 					class="p-0.5 rounded-full w-10 h-10 ring-2 ring-secondary"
 				/>
-				<p>Sujan</p>
+				<p>Welcome {data.session.user.email}</p>
 			</div>
 		</div>
 		<div class="flex flex-col items-center space-y-2 w-full">
