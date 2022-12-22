@@ -1,17 +1,4 @@
-<script>
 
-</script>
-
-<main class="h-screen w-screen">
-    <div class="flex w-full h-full justify-between relative">
-        <div class="image bg-cover bg-center w-2/3" style="background-image: url('/thumbsup.jpg'); background-color: rgba(0, 0, 0, 0.5) ;">
-            <div class="logo py-4">
-                <a href="/" class="font-inter text-center text-2xl font-semibold text-primary px-12">Kharcha</a>
-            </div>
-            <div class="content">
-                <p class="font-inter font-bold absolute bottom-16 left-16 leading-12 text-4xl text-secondary">Welcome to Kharcha, <br> <span class="">the leading expense tracker app!</span> </p>
-            </div>
-        </div>
         <div class="form bg-secondary h-full w-1/3  font-inter flex flex-col items-center justify-center">
             <form action="?/otp" method="POST" class="w-full px-16">
                 <h1 class="text-tertiary text-3xl mb-8 font-medium">Verify OTP</h1>
@@ -24,6 +11,3 @@
                 </div>
             </form>
         </div>
-    </div>
-
-</main>
