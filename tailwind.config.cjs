@@ -7,10 +7,10 @@ module.exports = {
         'inter' : 'Inter',
       },
       colors: {
-        primary: '#D3F36B',
-        secondary: '#24282C',
-        tertiary: '#F7F6F0',
-        info: '#FBFBFB'
+        primary: '#a1fe6b',
+        secondary: '#0f1010',
+        tertiary: '#fff',
+        info: '#09090a'
       }
     }
   },
