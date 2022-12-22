@@ -16,4 +16,8 @@
             <button class="bg-gray-300 w-full p-2">Sign In</button>
         </div>
     </form>
+    <p>Or</p>
+    <div>
+        <p>Sign in with <a href="/login/phone" class="text-primary bg-secondary p-1">Phone Number</a></p>
+    </div>
 </div>

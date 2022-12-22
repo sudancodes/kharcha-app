@@ -4,6 +4,8 @@
 		show = !show;
 	};
 	export let data
+	const phone = data.session.user.phone
+	const email = data.session.user.email
 </script>
 
 <main class="flex  font-inter">
@@ -17,7 +19,11 @@
 					alt="avatar"
 					class="p-0.5 rounded-full w-10 h-10 ring-2 ring-secondary"
 				/>
-				<p>Welcome {data.session.user.email}</p>
+				{#if phone}
+				<p>{phone}</p>
+				{:else}
+				<p>{email}</p>
+				{/if}
 			</div>
 		</div>
 		<div class="flex flex-col items-center space-y-2 w-full">

@@ -1,5 +1,20 @@
 <script>
     import "../app.css"
+    import { supabaseClient } from '$lib/supabase'
+  import { invalidateAll } from '$app/navigation'
+  import { onMount } from 'svelte'
+
+  onMount(() => {
+    const {
+      data: { subscription },
+    } = supabaseClient.auth.onAuthStateChange(() => {
+      invalidateAll()
+    })
+
+    return () => {
+      subscription.unsubscribe()
+    }
+  })
     export let data
 </script>
 <header class="flex items-center justify-between p-6 font-inter shadow-lg">
