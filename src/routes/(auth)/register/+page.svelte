@@ -1,5 +1,5 @@
-<div class="form bg-secondary h-full w-1/3  font-inter flex flex-col items-center justify-center">
-            <form action="?/register" method="POST" class="w-full px-16">
+<div class="form bg-secondary h-full md:w-1/3  font-inter flex flex-col items-center justify-center">
+            <form action="?/register" method="POST" class="w-full md:px-16 px-6">
                 <h1 class="text-tertiary text-3xl mb-8 font-medium ">Create an account</h1>
                 <div class="mb-4">
                     <label for="email" class="block text-tertiary mb-2 opacity-75 text-md">Email</label>

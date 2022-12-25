@@ -1,5 +1,5 @@
-<div class="form bg-secondary h-full w-1/3  font-inter flex flex-col items-center justify-center">
-            <form action="?/phone" method="POST" class="w-full px-16">
+<div class="form bg-secondary h-full md:w-1/3  font-inter flex flex-col items-center justify-center">
+            <form action="?/phone" method="POST" class="w-full md:px-16 px-6">
                 <h1 class="text-tertiary text-3xl mb-8 font-medium">Get a Code</h1>
                 <div class="mb-4">
                     <label for="phone" class="block text-tertiary mb-2 opacity-75 text-md">Phone Number</label>
