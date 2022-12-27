@@ -19,6 +19,6 @@ export const actions = {
         error: 'Internal Server error!'
       })
     }
-    throw redirect(303, '/dashboard/home')
+    throw redirect(303, '/home')
   }
 };

@@ -26,7 +26,7 @@
 <div class="flex p-8 space-x-4">
 	{#each expenses as expense}
 	<div
-	class="card  bg-purple-700 text-white border border-purple-50 shadow-md rounded-xl p-4 w-48 h-auto"
+	class="card  bg-primary text-secondary  shadow-md rounded-xl p-4 w-48 h-auto"
 	>
 				<div class="flex flex-col space-y-4">
 					<div class="date">
