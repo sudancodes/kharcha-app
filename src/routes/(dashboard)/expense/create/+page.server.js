@@ -22,6 +22,6 @@ create : async({request}) => {
       methods: methods,
     },
   })
-  throw redirect(303, '/dashboard/expense/show')
+  throw redirect(303, '/expense/show')
 }
 }
