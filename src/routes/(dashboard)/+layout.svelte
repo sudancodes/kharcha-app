@@ -12,7 +12,6 @@
 	const email = data.session.user.email
 </script>
 
-
 <main class="flex font-inter w-full h-screen">
 	<aside
 		class="bg-[#27292a] w-64 text-tertiary grid grid-rows-6 p-4"
@@ -142,19 +141,25 @@
 				<!-- Profile dropdown -->
 				<!-- svelte-ignore missing-declaration -->
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
-				<div class="image flex items-center space-x-4 cursor-pointer" on:click={handleNav}>
+				<div class="image flex items-center space-x-4 cursor-pointer bg-info px-4 rounded-full py-2 text-sm" on:click={handleNav}>
 					<img
 					src="https://i.pravatar.cc/50?img=3"
 					alt="avatar"
-					class="p-0.5 rounded-full w-10 h-10 ring-2 ring-primary"
+					class="p-0.5 rounded-full w-8 h-8 ring-2 ring-primary"
 					/>
 					{#if phone}
 					<p>{phone}</p>
 					{:else}
 					<p>{email}</p>
 					{/if}
+					<div>
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+							<polyline points="6 9 12 15 18 9" />
+						  </svg>
+					</div>
 				</div>
-				<div class="bg-[#27292a] absolute right-6 w-40 rounded-md top-16 p-4 flex space-x-4 justify-center" style:visibility={toggle ? 'visible' : 'hidden'}>
+				<div class="bg-[#27292a] absolute right-8 w-40 rounded-md top-[68px] p-4 flex space-x-4 justify-center" style:visibility={toggle ? 'visible' : 'hidden'}>
 					<div class="links flex flex-col space-y-4 w-full">
 						<div class="flex space-x-2 cursor-pointer items-center  w-full hover:opacity-75">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">

@@ -1,12 +1,13 @@
 <script>
 	export let data;
+	console.log(data);
 	const { expenses } = data;
 </script>
 {#if expenses.length > 0}
 <div class="grid grid-cols-3 p-8 gap-8">
 	{#each expenses as expense}
 	<div
-	class="card  bg-primary text-secondary  shadow-md rounded-xl p-4 w-full h-auto"
+	class="card  bg-primary text-secondary  shadow-md rounded-xl p-4 w-full h-auto  transition-all duration-300 hover:opacity-95"
 	>
 	<a href="/expense/show/{expense.id}">
 					<div class="flex flex-col space-y-4">
@@ -50,12 +51,12 @@
 </div>
 {:else}
 	<div class="flex flex-col items-center p-6">
-		<h2 class="text-4xl text-purple-700 mb-2">Hola !</h2>
-		<span class="text-purple-900 text-md italic">You have no any expenses yet. </span>
+		<h2 class="text-4xl text-primary mb-2">Hola !</h2>
+		<span class="text-primary text-md italic">You have no any expenses yet. </span>
 		<div class="img">
 			<img class="w-96 h-96" src="/nodata.svg" alt="nodatafound" />
 		</div>
-		<div class="btn bg-purple-700 hover:bg-purple-800 px-2 py-4 rounded-md shadow-md text-white">
+		<div class="btn bg-primary hover:opacity-75 px-2 py-4 rounded-md shadow-md text-secondary transition-all duration-300">
 			<a href="/expense/create">Add Expense</a>
 		</div>
 	</div>
